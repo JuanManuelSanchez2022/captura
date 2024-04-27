@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Página</title>
+</head>
+<body>
+    <h1>Datos</h1>
+    <div id="tablaDatos">
+        <!-- Aquí se mostrarán los datos de la tabla -->
+    </div>
+    <div id="documentoDatos">
+        <!-- Aquí se mostrará el contenido del documento importado -->
+    </div>
+
+    <script>
+        // Obtén los datos de la tabla (simulación)
+        const datosTabla = "Datos de la tabla obtenidos";
+
+        // Obtén el contenido del documento importado (simulación)
+        const contenidoDocumento = localStorage.getItem('miArchivo') || "Contenido del documento no encontrado";
+
+        // Muestra los datos en la página
+        document.getElementById('tablaDatos').textContent = datosTabla;
+        document.getElementById('documentoDatos').textContent = contenidoDocumento;
+    </script>
+</body>
+</html>

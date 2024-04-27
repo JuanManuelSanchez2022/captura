@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/responsibe.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/inputs.css">
+    <link href="../static/css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/formulario.css">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link href="../static/css/header.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/responsibe.css">
+    <link rel="stylesheet" href="../static/css/search.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap"
+          rel="stylesheet">
+
+
+    <script defer src="../static/js/validacionFormularios/validacionFormularioContacto.js"></script>
+    <script defer type="module" src="../static/js/controladores/edicionProductoController.js"></script>
+</head>
+
+<body>
+<header class="header">
+   
+    <section class="search_section">
+        <div class="search">
+            <input  class="input-search" placeholder="Numero de Expediente" type="number">
+            <img class="header__icon-search" src="../static/assets/icons/lupa.svg">
+        </div>
+        <div class="search">
+            <input  class="input-search" placeholder="Tipo de Expediente" type="text">
+            <img class="header__icon-search" src="../static/assets/icons/lupa.svg">
+        </div>
+        <div class="search">
+            <input  class="input-search" placeholder="Autor" type="text">
+            <img class="header__icon-search" src="../static/assets/icons/lupa.svg">
+        </div>
+    </section>
+</header>
+
+<main>
+    <section class="formulario">
+        <form class="formulario__form" action="" novalidate>
+            <h3>Editar Expediente</h3>
+            <div class="input__label">
+                <label class="input__label-label" for="">a</label>
+                <textarea class="input__label-area" class="footer__form-mensaje"  name="descripcionProducto" required maxlength="150"></textarea>
+                <p class="text-error" id="error-descripcion"></p>
+            </div>
+
+            <input class="btn-capturar-form" type="submit" value="Guardar Cambios">
+        </form>
+    </section>
+</main>
+
+
+</footer>
+<div class="footer__creditos">
+    <p>Desarrollado por Captur</p>
+    <p>2024</p>
+</div>
+
+</body>
+</html>

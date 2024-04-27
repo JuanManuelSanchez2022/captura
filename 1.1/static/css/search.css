@@ -1,0 +1,14 @@
+.search{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    width: 300px;
+    height: 20px;
+
+}
+
+.search_section{
+    padding-left: 50px;
+    background-color: rgb(209, 213, 231);
+}

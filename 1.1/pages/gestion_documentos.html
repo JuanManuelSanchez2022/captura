@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/responsibe.css" rel="stylesheet">
+    <link href="../static/css/inputs.css" rel="stylesheet">
+    <link href="../static/css/common.css" rel="stylesheet">
+    <link href="../static/css/formulario.css" rel="stylesheet">
+    <link href="../static/css/reset.css" rel="stylesheet">
+    <link href="../static/css/header.css" rel="stylesheet">
+    <link href="../static/css/footer.css" rel="stylesheet">
+    <link href="../static/css/responsibe.css" rel="stylesheet">
+    <link href="../static/css/search.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap"
+          rel="stylesheet">
+
+
+    <script defer src="../static/js/validacionFormularios/validacionFormularioContacto.js"></script>
+    <script defer type="module" src="../static/js/controladores/edicionProductoController.js"></script>
+</head>
+
+<body>
+<header class="header">
+
+    <section class="search_section">
+        <section class="header__logo">
+            <div class="logo">
+                <img alt="" src="../static/assets/logos/logo-muni.png">
+            </div>
+            <div class="search">
+                <input  class="input-search" placeholder="Numero de Expediente" type="number">
+                <img class="header__icon-search" src="../static/assets/icons/lupa.svg">
+            </div>
+            <div class="search">
+                <input  class="input-search" placeholder="Tipo de Expediente" type="text">
+                <img class="header__icon-search" src="../static/assets/icons/lupa.svg">
+            </div>
+
+        <div class="search">
+            <input  class="input-search" placeholder="Autor" type="text">
+            <img class="header__icon-search" src="../static/assets/icons/lupa.svg">
+        </div>
+        </section>
+    </section>
+</header>
+
+<main>
+    <section class="formulario">
+        <form class="formulario__form" action="" novalidate>
+            <h3>Editar Documento</h3>
+            <div class="input__label">
+                <label class="input__label-label" for="">a</label>
+                <textarea class="input__label-area" class="footer__form-mensaje"  name="descripcionProducto" required maxlength="150"></textarea>
+                <p class="text-error" id="error-descripcion"></p>
+            </div>
+
+            <input class="btn-capturar-form" type="submit" value="Guardar Cambios">
+        </form>
+    </section>
+</main>
+
+
+</footer>
+<div class="footer__creditos">
+    <p>Desarrollado por Captur</p>
+    <p>2024</p>
+</div>
+
+</body>
+</html>

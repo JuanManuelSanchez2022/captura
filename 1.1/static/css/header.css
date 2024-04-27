@@ -1,0 +1,56 @@
+.header{
+    background-color: rgb(209, 213, 231);
+}
+
+.header__logo{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 0 10px;
+}
+
+.header h2{
+    font-size: 20px;
+    padding-left: 30rem;
+}
+
+
+
+
+
+
+
+.header__search{
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+    border-radius: 10px;
+    background: #F5F5F5;
+}
+.input-search{
+    border: none;
+    background: #F5F5F5;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1rem 5rem 1rem 1rem;
+    font-size: 1.5rem;
+    width: 30rem;
+}
+.btn-login{
+    padding: 1rem 3rem 1rem 3rem;
+    background: none;
+    border: solid #2A7AE4 1px ;
+    color: #2A7AE4;
+    font-size: 2rem;
+}
+.btn-login:hover{
+    padding: 1rem 3rem 1rem 3rem;
+    background: #2A7AE4;
+    border: solid #2A7AE4 1px ;
+    color: #F5F5F5;
+}
+
+
+

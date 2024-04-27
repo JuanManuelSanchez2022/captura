@@ -1,0 +1,43 @@
+.editor{
+    background-color: #F5F5F5;
+    margin-left: 4rem;
+}
+
+.editor h3{
+    text-align: center;
+    margin: 0px 5px;
+    font-size: 25px;
+    background-color: rgb(211, 211, 211);
+    padding: 15px;
+}
+
+.input__label-btn{
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 0rem 60rem;
+    background-color: #318afe;
+    border-radius: 1rem;
+    border: 0;
+    width: 250px;
+    height: 50px;
+    align-content: center;
+}
+
+.input__label-btn:hover{
+    background: #ffffff;
+    border: solid 1px #318afe;
+    color: #318afe;
+    transition: 1.2s;
+}
+
+#text_capture{
+    text-align: center;
+    width: 1300px;
+    height: 20px;
+    resize: none;
+    background-color: #89e160;
+}
+
+
+
+

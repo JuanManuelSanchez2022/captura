@@ -1,0 +1,61 @@
+.principal_config{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5rem 5rem;
+    margin: 5rem 3rem;
+}
+
+.option_img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.option_img:hover{
+    transition: 1s;
+    box-shadow: 8px 8px 8px 8px rgb(47, 47, 47) ;
+}
+
+.a{
+    font-size: 1.5rem;
+}
+
+.opt{
+    padding-left: 20rem;
+    text-align: center;
+    vertical-align:middle;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+#opt_btn{
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #318afe;
+    border-radius: 1rem;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    align-content: center;
+}
+
+#opt_btn:hover{
+    background: #ffffff;
+    border: solid 1px #318afe;
+    color: #318afe;
+    transition: 1.2s;
+}
+
+
+
+
+
+
+
+

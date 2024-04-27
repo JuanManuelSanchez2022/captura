@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar PDF</title>
+
+    <link href="../static/css/header.css" rel="stylesheet">
+    <link href="../static/css/formulario.css" rel="stylesheet">
+    <link href="../static/css/footer.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+
+        <section class="header__logo">
+            <div class="logo">
+                <img alt="" src="../static/assets/logos/logo-muni.png">
+            </div>
+            <h1>Crear Archivo PDF</h1>
+        </section>
+    </header>
+<main> 
+    <input type="text" id="esc"><br><br>
+    <footer>
+        <a id="create_link" href="javascript:genPDF()">Crear PDF</a>
+        <script type="text/javascript" src="../static/js/jsGenerarPDF-main/jsGenerarPDF-main/jspdf.min.js"></script>
+        <script type="text/javascript">
+            function genPDF(){
+                var doc=new jsPDF();
+                let mensaje=document.getElementById('esc').value;
+                doc.text(20,20,mensaje);
+                doc.addPage();
+                doc.text(20,20,'Mi trabajo!!');
+                doc.save('Test.pdf');
+            }
+        </script>
+    </footer>
+</main>  
+</body>
+</html>

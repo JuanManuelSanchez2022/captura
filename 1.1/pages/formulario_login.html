@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/reset.css" rel="stylesheet">
+    <link href="../static/css/common.css" rel="stylesheet">
+    <link href="../static/css/header.css" rel="stylesheet">
+    <link href="../static/css/search.css" rel="stylesheet">
+    <link href="../static/css/footer.css" rel="stylesheet">
+    <link href="../static/css/body style.css" rel="stylesheet">
+    <link href="../static/css/responsibe.css" rel="stylesheet">
+    <link href="../static/css/formulario.css" rel="stylesheet">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <script defer src="../static/js/validacionFormularios/validacionFormularioInicioSesion.js"></script>
+    <script defer src="../static/js/validacionFormularios/validacionFormularioContacto.js"></script>
+
+    <title>Captur</title>
+
+</head>
+<body>
+
+<header class="header">
+
+    <section class="header__logo">
+        <div class="logo">
+            <img alt="" src="../static/assets/logos/logo-muni.png">
+        </div>
+        <h2><u>Inicio de sesion</u></h2>
+    </section>
+
+
+</header>
+<section class="banner">
+
+</section>
+<main>
+
+    <section class="formulario_session">
+        <form class="form" action="#" novalidate>
+            <h3>Iniciar Sesión</h3>
+            <div class="input__label">
+
+                <label class="input__label-label" for="">Correo</label>
+                <input name="usuario" class="input__label-input" type="email" required>
+                <p id="error-usuario" class="text-error"></p>
+            </div>
+            <div class="input__label">
+                <label class="input__label-label" for="">Contraseña</label>
+                <input name="contrasenia" class="input__label-input" type="password" required>
+                <p id="error-contra" class="text-error"></p>
+            </div>
+            <input class="input-btn" type="submit" value="Entrar">
+
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__creditos">
+        <p>Desarrollado por Captur</p>
+        <p>2024</p>
+    </div>
+</footer>
+
+
+    </body>
+    </html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="../static/css/inputs.css" rel="stylesheet">
+    <link href="../static/css/common.css" rel="stylesheet">
+    <link href="../static/css/formulario.css" rel="stylesheet">
+    <link href="../static/css/reset.css" rel="stylesheet">
+    <link href="../static/css/header.css" rel="stylesheet">
+    <link href="../static/css/banner.css" rel="stylesheet">
+    <link href="../static/css/table.css" rel="stylesheet">
+    <link href="../static/css/footer.css" rel="stylesheet">
+    <link href="../static/css/responsibe.css" rel="stylesheet">
+    <link href="../static/css/editor.css" rel="stylesheet">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="">
+
+    <script defer src="../static/js/captura_datos.js"></script>
+    <scriptdefer src="../static/js/ingresoNuevoDocumento/crearNuevoDoc.js">
+        </script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+        <script src="tinymce/tinymce.min.js"></script>
+        <script src="../static/js/mce/mce.js"></script>
+        <script src="../static/js/nuevoDocumento/crearNuevoDoc.js"></script>
+        <script type="text/javascript" src="../static/js/jsGenerarPDF-main/jsGenerarPDF-main/jspdf.min.js"></script>
+
+        <title></title>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <section class="header__logo">
+            <div class="logo">
+                <img alt="" src="../static/assets/logos/logo-muni.png">
+            </div>
+            <h2><u>Ingresar Expediente</u></h2>
+        </section>
+    </header>
+
+    <main>
+
+        <div class="forms">
+            <h3><u>Seleccione los campos correspondientes</u></h3>
+            <section class="formulario_exp">
+                <form class="form">
+                    Tipos de tramite
+                    <select type="text" id="tramites_select" class="tramitesText" value="">
+                        <option disabled selected="">Selecciona un tramite</option>
+                        <option value="Comunicacion/Nota Oficial">Comunicacion/Nota Oficial</option>
+                        <option value="Cuestion de Privilegio">Cuestion de Privilegio</option>
+                        <option value="Nota Oficial/Veto">Nota Oficial/Veto</option>
+                        <option value="Pliego">Pliego</option>
+                        <option value="Proyecto de Declaracion">Proyecto de Declaracion</option>
+                        <option value="Proyecto de Ley">Proyecto de Ley</option>
+                        <option value="Proyecto de Resolucion">Proyecto de Resolucion</option>
+                    </select>
+                </form>
+
+                <form class="form">
+                    Nombre
+                    <select type="text" id="nombre_select" class="tramitesText" value="">
+                        <option disabled selected="">Selecciona un tramite</option>
+                        <option value="Adhesion">Adhesion</option>
+                        <option value="Adhesion a Ley">Adhesion a Ley</option>
+                        <option value="Adhesion y Beneplacito">Adhesion y Beneplacito</option>
+                        <option value="Citacion a Ministros">Citacion a Ministros (Art 101 C.P.)</option>
+                        <option value="Comunicaciones Particulares">Comunicaciones Particulares</option>
+                        <option value="Comunicacion Ley 9086">Comunicacion Ley 9086</option>
+                        <option value="Cuenta de Inversion">Cuenta de Inversion</option>
+                        <option value="Cuestion de Privilegio iniciada en el Recinto">Cuestion de Privilegio iniciada en
+                            el Recinto</option>
+                        <option value="Cuestion de Privilegio por Nota">Cuestion de Privilegio por Nota</option>
+                        <option value="Codigo Tributario">Codigo Tributario</option>
+                        <option value="Declaracion de visitante Ilustre o similar">Declaracion de visitante Ilustre o
+                            similar</option>
+                        <option value="Desagrado, Preocupacion, Rechazo o Repudio">Desagrado, Preocupacion, Rechazo o
+                            Repudio</option>
+                        <option value="Ejecucion Presupuestaria">Ejecucion Presupuestaria</option>
+                        <option value="Expropiacion - Ejecutivo">Expropiacion - Ejecutivo</option>
+                        <option value="Incorporacion de Art. al R.I.">Incorporacion de Art. al R.I.</option>
+                        <option value="Informe anual del Defensor del Pueblo">Informe anual del Defensor del Pueblo
+                        </option>
+                        <option value="Informe de la defensoria">Informe de la defensoria de las niñas, niños y
+                            adolescencia</option>
+                        <option value="Informes de Organismos Oficiales">Informes de Organismos Oficiales - Otros
+                        </option>
+                        <option value="Informes Obligatorios">Informes Obligatorios por Ley</option>
+                        <option value="Instruccion a Senadores">Instruccion a Senadores(Art. 104 Inc.5 C.P)</option>
+                        <option value="Interés Legislativo">Interés Legislativo</option>
+                        <option value="Ley Impositiva">Ley Impositiva</option>
+                        <option value="Migracion - Comunicacion de Ley">Migracion - Comunicacion de Ley 9086</option>
+                        <option value="Migracion - Comunicacion/Nota Oficial">Migracion - Comunicacion/Nota Oficial
+                        </option>
+                        <option value="Migracion - Cuestion de Priviegio">Migracion - Cuestion de Priviegio</option>
+                        <option value="Migracion  - Declaracion">Migracion - Declaracion</option>
+                        <option value="Migracion  - Ley">Migracion - Ley</option>
+                        <option value="Migracion  - Ley Legislativo">Migracion - Ley - Legislativo</option>
+                        <option value="Migracion  - Pliegos">Migracion - Pliegos</option>
+                        <option value="Migracion  - Resolución">Migracion - Resolución</option>
+                        <option value="Migracion  - Veto parcial a Ley sancionada">Migracion - Veto parcial a Ley
+                            sancionada</option>
+                        <option value="Modificacion de Art. del Reglamento Interno">Modificacion de Art. del Reglamento
+                            Interno</option>
+                        <option value="Modificacion radio - Ejecutivo">Modificacion radio - Ejecutivo</option>
+                        <option value="Nota para solicitud de licencias">Nota para solicitud de licencias</option>
+                        <option value="Nota para solicitud de renuncia">Nota para solicitud de renuncia</option>
+                        <option value="Otras clases NO contempladas - C/N">Otras clases NO contempladas - C/N</option>
+                        <option value="Otras clases NO contempladas - D">Otras clases NO contempladas - D</option>
+                        <option value="Otras clases NO contempladas - R">Otras clases NO contempladas - R</option>
+                        <option value="Pedidos de Informe">Pedidos de Informe(Art. 102 C.P.)</option>
+                        <option value="Pesar de Fallecimiento">Pesar de Fallecimiento</option>
+                        <option value="Pliego">Pliego</option>
+                        <option value="Presupuesto">Presupuesto</option>
+                        <option value="Proyecto de Ley - Ejecutivo">Proyecto de Ley - Ejecutivo</option>
+                        <option value="Proyecto de Ley - Legislativo">Proyecto de Ley - Legislativo</option>
+                        <option value="Proyecto de Ley - TSJ">Proyecto de Ley - TSJ</option>
+                        <option value="Ratificacion o Suscripcion de Convenios">Ratificacion o Suscripcion de Convenios
+                        </option>
+                        <option value="Reconocimientos">Reconocimientos</option>
+                        <option value="Rehabilitacion de Proyectos">Rehabilitacion de Proyectos</option>
+                        <option value="Respuesta a Pedido de Informe">Respuesta a Pedido de Informe</option>
+                        <option value="Sugerencia de modif. de Normas">Sugerencia de modif. de Normas (Art. 15- Ley
+                            7741)</option>
+                        <option value="Sugerencias y Solicitudes a Otros Poderes o terc.">Sugerencias y Solicitudes a
+                            Otros Poderes o terc.</option>
+                        <option value="Veto Parcial a Ley Sancionada">Veto Parcial a Ley Sancionada</option>
+                        <option value="Veto Total a Ley Sancionada">Veto Total a Ley Sancionada</option>
+                        <option value="Proyecto de Ley - TSJ">Proyecto de Ley - TSJ</option>
+                        <option value="Proyecto de Ley - TSJ">Proyecto de Ley - TSJ</option>
+                    </select>
+                </form>
+
+                <form class="form">
+                    Tipos de despacho
+                    <select id="despacho_select" class="tramitesText" value="">
+                        <option disabled selected="">Selecciona un tramite</option>
+                        <option value="Despacho Contabilizado">Despacho Contabilizado</option>
+                        <option value="Despacho Camara en Comision">Depacho Camara en Comision</option>
+                        <option value="Despacho Camara en Comision Contabilizado">Depacho Camara en Comision
+                            Contabilizado</option>
+                        <option value="Despacho de Comision">Despacho de Comision</option>
+                        <option value="Despacho de Comision Mayoria">Despacho de Comision Mayoria</option>
+                        <option value="Despacho de Comision Minoria">Despacho de Comision Minoria</option>
+                        <option value="Despacho de Comision por Art. 101">Despacho de Comision por Art. 101</option>
+                    </select>
+                </form>
+
+                <form class="form">
+                    Camara
+                    <select id="camara_select" class="tramitesText" value="">
+                        <option disabled selected="">Selecciona un tramite</option>
+                        <option value="Diputados">Diputados</option>
+                        <option value="Senadores">Senadores</option>
+                        <option value="Poder Legislativo Unicameral">Poder Legislativo Unicameral</option>
+                    </select>
+                </form>
+        </div>
+        <div>
+            <button id="btn-capturar" class="input__label-btn" type="button" onclick="unirTexto()">Capturar
+                Datos</button>
+        </div>
+
+        <section class="editor">
+            <div class="textEditor">
+                <h3>Copie el texto</h3>
+                <form>
+                    <textarea id="default_1"></textarea>
+                </form>
+            </div>
+
+            <script>
+                // Evita la recarga de la página al enviar el formulario
+                document.querySelector('form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                });
+            </script>
+
+            <div class="text_save">
+                <h3>Datos listos para archivar</h3>
+                <form>
+                    <textarea id="text_capture"></textarea>
+                    <button type="submit" id="btn-export" class="input__label-btn"
+                        onclick="extraerYMostrarTexto(); return false;">Exportar cabecera</button>
+
+                    <textarea id="esc"></textarea>
+                    <button type="submit" id="btn-guardar" class="input__label-btn" onclick="abrirPDF()">Cargar
+                        datos</button>
+
+                    <script>
+                        function abrirPDF() {
+                            var textCaptureValue = document.getElementById("text_capture").value;
+                            var defaultValue = document.getElementById("default").value;
+                            var combinedValue = textCaptureValue + "\n" + defaultValue; // Combina los valores
+                            document.getElementById("esc").value = combinedValue; // Asigna al campo "esc"
+                            var url = 'pdfpage.html'; // Reemplaza 'pdfpage.html' con la ubicación de tu archivo PDF
+                            var win = window.open(url, '_blank');
+                        }
+                    </script>
+
+                </form>
+            </div>
+        </section>
+
+        //elimiar el scrapping, dejar "text_capture" como esta y agregar un display de caida
+        para copiar y pegar el texto de "default"
+
+
+    </main>
+
+
+    <div class="footer__creditos">
+        <p>Desarrollado por Captur</p>
+        <p>2024</p>
+    </div>
+
+    <script src="../pages/index.js"></script>
+
+    </section>
+</body>
+
+</html>
