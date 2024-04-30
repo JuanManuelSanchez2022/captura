@@ -1,11 +1,30 @@
+.tipExp_tab{
+    background-image: url('../assets/images/cordoba-768x236.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center top 130px;
+    opacity: 1;
+    background-color: rgba(232, 232, 232, 0.5);
+}
+
 #data_camp, #search_data_camp{
     display: block;
 }
 
-.btn_up{
+.btn_up, #search_data_camp{
     margin: 1rem 0;
     display: flex;
     justify-content: center;
+}
+
+#search_data_camp{
+    padding: 10px 0;
+    background-color: #ffffff00;
+}
+
+#data{
+    display: inline-flex;
 }
 
 #opt_btn_1{
@@ -16,31 +35,37 @@
     margin-left: 50px;
 }
 
-#search_data_camp{
-    margin-bottom: 1rem;
-    padding: 1rem 2rem;
-    background: #F5F5F5;
-    height: 1.5rem;
-    vertical-align: middle;
-}
-
 .p{
     font-size: 20px;
+    align-items: center;
 }
 
 .p_input{
     margin-left: 10px;
     height: 1.5rem;
-    width: 16rem;
+    width: 20rem;
 }
 
 #form_group{
     display: inline-flex;
     flex-direction: column;
     gap: 1rem;
-    margin: 15px;
     border: 1.5px solid #000;
     padding: 5px;
+    margin-left: 3.5rem;
+}
+
+#form_group_mandato{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #000;
+    padding: 5px;
+    margin-left: 3.5rem;
+    margin-bottom: 20px;
+    width: 40rem;
+    height: 20rem;
 }
 
 #img_camp{
@@ -60,17 +85,20 @@
     flex-direction: row;
     gap: 1rem;
     align-items: center;
-    border: 1.5px solid #000;
-    padding: 5px;
+    border: 2px solid #000;
     font-size: 15px;
-    background-color: #F5F5F5;
+    background-color: transparent;
+}
+
+#data_camp_down{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
 }
 
 #input_group_mandato{
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
+    margin-bottom: 1rem;
     border: 1.5px solid #000;
     padding: 5px;
     font-size: 15px;
@@ -78,11 +106,42 @@
     margin-top: 20px;
 }
 
+#form_group_mandato p{
+    text-align: center;
+}
+
+.nota_text{
+    height: 150px;
+    width: 550px;
+}
+
+#table{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border: 1.5px solid #000;
+    padding: 5px;
+    font-size: 15px;
+    background-color: #F5F5F5;
+    margin: 20px 0 0 80px;
+}
+
+#table th{
+    width: 300px;
+}
+
+#table td{
+    border:  1.5px solid #000;
+}
 
 
 
 
-#opt_btn_1, #opt_btn_2, #save_btn{
+
+
+#opt_btn_1, #opt_btn_2{
     padding: 10px;
     font-size: 1rem;
     background-color: #318afe;
@@ -91,6 +150,19 @@
     width: 200px;
     height: 50px;
     align-content: center;
+}
+
+#save_btn{
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #318afe;
+    border-radius: 1rem;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
 }
 
 #opt_btn_1:hover{

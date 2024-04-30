@@ -3,8 +3,11 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem 0 0 0;
-    text-align: center;
     background:#EAF2FD;
     font-size: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 

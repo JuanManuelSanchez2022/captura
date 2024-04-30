@@ -1,4 +1,4 @@
-.principal_config{
+.principal_config, .principal{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +34,13 @@
     grid-gap: 5px;
 }
 
-#opt_btn{
+.formulario_session{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#opt_btn, #input-btn{
     padding: 10px;
     font-size: 1rem;
     background-color: #318afe;
@@ -50,6 +56,67 @@
     border: solid 1px #318afe;
     color: #318afe;
     transition: 1.2s;
+}
+
+#input-btn:hover{
+    background: #ffffff;
+    border: solid 1px #318afe;
+    color: #318afe;
+    transition: 1.2s;
+}
+
+.input__label{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.input_icon{
+    width: 100px;
+    height: 100px;
+}
+
+.input__label-label{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.input__label-input{
+    font-size: 1.6rem;
+    border:black solid 1.5px;
+    font-family: Raleway;
+    border-radius: 5px;
+}
+
+.input__label-area{
+    
+    margin-top: 1rem;
+    outline: none;
+    border: 0;
+    font-size: 1.6rem;
+    font-family: Raleway;
+    padding: 1rem;
+    height: 8rem;
+    resize: none;
+
+}
+
+.input__label-btn{
+    margin: 1rem 50rem;
+    width: 30%;
+    background: #2A7AE4;
+    border: 0;
+    color: #FFFFFF;
+    padding: 2rem 1rem 2rem 1rem;
+    font-size: 1.5rem;
+}
+.input__label-btn:hover{
+    background: #FFFFFF;
+    border: solid 1px #2A7AE4;
+    padding: 2rem 1rem 2rem 1rem;
+    color: #2A7AE4;
 }
 
 

@@ -55,13 +55,13 @@
                 </div>
                 <div id="input_group">
                     <label ap_>Apellido</label>
-                    <input type="text" placeholder="Ingrese Apellido" />
+                    <input type="text" placeholder="Apellido" />
                     <label nom_>Nombre</label>
-                    <input type="text" placeholder="Ingrese Nombre" />
+                    <input type="text" placeholder="Nombre" />
                 </div>
                 <div id="input_group">
-                    <label cuil>C.U.I.L</label>
-                    <input type="number" placeholder="C.U.I.L" />
+                    <label cuil>CUIL</label>
+                    <input type="number" placeholder="CUIL"/>
                     <label dni>DNI</label>
                     <input type="number" placeholder="DNI" />
                     <label sexo>Sexo</label>
@@ -107,31 +107,35 @@
                 </div>
             </form>
         </section>
-        <section id="data_camp">
-            <form id="form_group">
+        <section id="data_camp_down">
+            <form id="form_group_mandato">
+                <p>Mandato</p>
                 <div id="input_group_mandato">
-                    <label mandato>Mandato</label>
-                    <a>Desde</a>
-                    <input type="date" value="2023-06-01" />
-                    <a>Hasta</a>
-                    <input type="date" value="2023-06-01" />
+                    <div id="input_group_mandato">
+                        <a>Distrito</a>
+                        <input type="text" placeholder="Seleccione el Distrito"/>
+                        <a>Desde</a>
+                        <input type="date" value="2023-06-01" />
+                        <a>Hasta</a>
+                        <input type="date" value="2023-06-01" />
+                    </div>
                 </div>
-                <div id="input_group_mandato">
-                    <label distrito>Distrito</label>
-                    <input type="text" placeholder="Seleccione el Distrito" />
+                <div id="input_group_mandato_nota">
                     <label notas>Notas</label>
-                    <input type="text" placeholder= />
+                    <input class="nota_text" type="text">
                 </div>
             </form>
-            <form  id="form_group">
-                <div id="input_group">
-                    <label bloque>Bloque</label>
+            <form id="form_group_mandato">
+                <p>Bloque</p>
+                <div id="input_group_mandato">
                     <a>Desde</a>
                     <input type="date" value="2023-06-01" />
                     <a>Hasta</a>
                     <input type="date" value="2023-06-01" />
+                </div>
+                <div id="input_group_mandato_nota">
                     <label notas>Notas</label>
-                    <input type="text" placeholder= />
+                    <input class="nota_text" type="text">
                 </div>
             </form>
         </section>
@@ -139,12 +143,39 @@
 
         <button id="save_btn" type="submit">Guardar</button>
 
+        <table id="table">
+            <thead>
+                <tr>
+                    <th class="apellido">Apellido</th>
+                    <th class="nombre">Nombre</th>
+                    <th Class="distrito">Distrito</th>
+                    <th >Check</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        
+
 
     </main>
 
     <footer class="footer">
         <div class="footer__creditos">
-            <p>Desarrollado por Captur</p>
+            <p>Desarrollado por Juan Manuel Sanchez</p>
             <p>2024</p>
         </div>
     </footer>
