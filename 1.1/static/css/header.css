@@ -1,5 +1,5 @@
 .header{
-    background-color: rgb(209, 213, 231);
+    background: linear-gradient(70deg, #ff5151, #6969ff, #faff69);
 }
 
 .header__logo{
@@ -12,9 +12,17 @@
     margin: 0 10px;
 }
 
+img{
+    max-width: 15%;
+    max-height: 15%;
+}
+
 .header h2{
     font-size: 20px;
-    padding-left: 30rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -23,34 +31,7 @@
 
 
 
-.header__search{
-    display: flex;
-    align-items: center;
-    padding-right: 2rem;
-    border-radius: 10px;
-    background: #F5F5F5;
-}
-.input-search{
-    border: none;
-    background: #F5F5F5;
-    border-radius: 10px 10px 10px 10px;
-    padding: 1rem 5rem 1rem 1rem;
-    font-size: 1.5rem;
-    width: 30rem;
-}
-.btn-login{
-    padding: 1rem 3rem 1rem 3rem;
-    background: none;
-    border: solid #2A7AE4 1px ;
-    color: #2A7AE4;
-    font-size: 2rem;
-}
-.btn-login:hover{
-    padding: 1rem 3rem 1rem 3rem;
-    background: #2A7AE4;
-    border: solid #2A7AE4 1px ;
-    color: #F5F5F5;
-}
+
 
 
 

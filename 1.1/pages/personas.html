@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link href="../static/css/header.css" rel="stylesheet">
     <link href="../static/css/footer.css" rel="stylesheet">
-    <link href="../static/css/tiposExpediente.css" rel="stylesheet">
+    <link href="../static/css/personas.css" rel="stylesheet">
 
 
 
@@ -18,13 +18,10 @@
         rel="stylesheet">
 
     <title>Captur</title>
-
 </head>
 
 <body>
-
     <header class="header">
-
         <section class="header__logo">
             <div class="logo">
                 <img alt="" src="../static/assets/logos/logo-muni.png">
@@ -33,64 +30,62 @@
         </section>
     </header>
 
-    <main class="tipExp_tab">
-
+    <main id="tipExp_tab">
         <section id="opt">
-            <div class="opta">
+            <div id="opta">
                 <button id="opt_btn" type="submit">Nuevo</button>
                 <button id="opt_btn" type="submit">Editar</button>
             </div>
         </section>
-        <section>
-            <div>
-                <label per_>Persona</label>
-                <img src="">
-            </div>
-        </section>
-        <section>
-            <div>
-                <label ap_>Apellido</label>
-                <textarea placeholder="Ingrese Apellido"></textarea>
-            </div>
-            <div>
-                <label nom_>Nombre</label>
-                <textarea placeholder="Ingrese Nombre"></textarea>
-            </div>
-            <div>
-                <label cuil>CUIL</label>
-                <textarea type="number" placeholder="CUIL"></textarea>
-            </div>
-            <div>
-                <label email>Email Oficial</label>
-                <textarea type="Email" placeholder="Codificacion"></textarea>
-            </div>
-            <div>
-                <label nota>Nota</label>
-                <textarea type="text"></textarea>
-            </div>
-            </section>
-            <section>
-                <div>
-                    <label img_firma>Imagen de la firma</label>
-                    <textarea>aca va la Imagen</textarea>
-                    <button type="submit"></button>
+        <section id="persona">
+            <form id="persona_id">
+                <div id="persona_id">
+                    <label per_><u>Persona</u></label>
+                    <img id="persona_img" src="../static/assets/icons/profile.png">
                 </div>
-            </section>
+            </form>
 
+            <form id="persona_data">
+                <div id="persona_data_camp">
+                    <label id="d">Apellido</label>
+                    <textarea id="text" placeholder="Ingrese Apellido"></textarea>
+                </div>
+                <div id="persona_data_camp">
+                    <label id="d">Nombre</label>
+                    <textarea id="text" placeholder="Ingrese Nombre"></textarea>
+                </div>
+                <div id="persona_data_camp">
+                    <label id="d">CUIL</label>
+                    <textarea id="text" type="number" placeholder="CUIL"></textarea>
+                </div>
+                <div id="persona_data_camp">
+                    <label id="d">Email Oficial</label>
+                    <textarea id="text" type="Email" placeholder="Email"></textarea>
+                </div>
+                <div id="persona_data_camp">
+                    <label id="d">Nota</label>
+                    <textarea id="text" type="text" placeholder="Nota"></textarea>
+                </div>
+            </form>
 
-        <button type="submit">Guardar</button>
-
-        <table>
-
-        </table>
-        </div>
-
+            <form id="persona_id">
+                <div id="persona_id">
+                    <label per_><u>Firma</u></label>
+                    <img id="persona_img" src="../static/assets/icons/firma.png">
+                </div>
+            </form>
         </section>
+            <form id="imput_btn_camp">
+                <div>
+                    <button id="input-btn" type="submit">Guardar</button>
+                </div>
+            </form>
     </main>
+    
 
     <footer class="footer">
         <div class="footer__creditos">
-            <p>Desarrollado por Captur</p>
+            <p>Desarrollado por Juan Manuel Sanchez</p>
             <p>2024</p>
         </div>
     </footer>

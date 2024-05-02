@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <link href="../static/css/header.css" rel="stylesheet">
     <link href="../static/css/footer.css" rel="stylesheet">
-    <link href="../static/css/tiposExpediente.css" rel="stylesheet">
-
-
+    <link href="../static/css/tiposDeExpediente.css" rel="stylesheet">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,40 +27,41 @@
             <div class="logo">
                 <img alt="" src="../static/assets/logos/logo-muni.png">
             </div>
-            <h2><u>Tipos de Expediente</u></h2>
+            <h2><u>Tipos de Instancia</u></h2>
         </section>
 
 
     </header>
 
-    <main class="principal_config">
+    <main id="principal_config">
         <section id="opt">
-            <div class="opta">
-                <button id="opt_btn" type="submit">Nuevo</button>
-                <button id="opt_btn" type="submit">Editar</button>
-            </div>
-        </section>
-
-        <section id="opt_1">
-            <div class="optb">
-                <label id="lCont">Nombre</label>
-                <textarea id="textCont" placeholder="Nombre"></textarea>
-            </div>
-
-        </section>
-            <button id="opt_btn_down" type="submit">Guardar</button>
-
-            <table>
-
-            </table>
-            </div>
-
+            <form id="opt_btn_camp">
+                 <div class="opta">
+                    <button id="opt_btn" type="submit">Nuevo</button>
+                    <button id="opt_btn" type="submit">Editar</button>
+                </div>
+            </form>
+            <form id="opt_text"> 
+                <div class="optb">
+                    <label id="lCont">Nombre</label>
+                    <textarea id="textCont" placeholder="Nombre"></textarea>
+                </div>
+                <div  class="optc">
+                    <label id="lCont">Tipo de Instancia</label>
+                    <textarea id="textCont" placeholder="Instancia"></textarea>
+                </div>
+            </form>
+            <form id="opt_btn_down_camp">
+                <button id="opt_btn_down" type="submit">Guardar</button>
+            </form>
         </section>
     </main>
 
     <footer class="footer">
         <div class="footer__creditos">
-            <p>Desarrollado por Captur</p>
+            <p>Desarrollado por Juan Manuel Sanchez</p>
             <p>2024</p>
         </div>
     </footer>
+
+ 

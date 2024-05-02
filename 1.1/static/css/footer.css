@@ -3,9 +3,8 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem 0 0 0;
-    background:#EAF2FD;
+    background: linear-gradient(70deg, #ff5151, #6969ff, #faff69);
     font-size: 1rem;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;

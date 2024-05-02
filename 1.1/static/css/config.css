@@ -1,0 +1,42 @@
+#principal_config{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5rem 5rem;
+    background-image: url('../assets/images/cordoba-768x236.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center top 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opt{
+    text-align: center;
+    vertical-align:middle;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    margin: 300px auto 100px auto;
+}
+
+#opt_btn{
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #318afe;
+    border-radius: 1rem;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    align-content: center;
+    cursor: pointer;
+}
+
+#opt_btn:hover{
+    background: #ffffff;
+    border: solid 1px #318afe;
+    color: #318afe;
+    transition: 1.2s;
+}
